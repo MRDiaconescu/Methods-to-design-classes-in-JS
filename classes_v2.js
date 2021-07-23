@@ -109,12 +109,11 @@ function SystemQueueClass(constructor, methods_list, instance_f) {
     
     if (methods_list) {set_properties(constructor.prototype, methods_list);
         
-        print("Methods_list", methods_list);
     }
     
     if (instance_f) {set_properties(constructor, instance_f);}
     
-    for (var item in constructor.prototype) {print("Property", item);}
+    for (var item in constructor.prototype) {print(item);}
     
     return constructor;
     
@@ -346,10 +345,6 @@ print(SystemQueueClass_var1_1);
 for (var item in SystemQueueClass_var1_1) {print(item);}
 
 
-
-
-print(SystemQueueClass_var1_1.add_path_f1);
-
 SystemQueueClass_var1_1.add_path_f1(airports_list1);
 
 print(SystemQueueClass_var1_1.llist_data);
@@ -368,7 +363,7 @@ print(var5.path_coordinates);
 
 var linked_list1_1 = SystemQueueClass_var1_1.LinkedList(SystemQueueClass_var1_1.llist_data, 1);
 
-print("linked_list", linked_list1_1);
+print(linked_list1_1);
 
 var airport_numbers1_1 = SystemQueueClass_var1_1.airport_number_generator(airports_list1);
 
@@ -387,7 +382,6 @@ print(SystemQueueClass_var1_1.path_coordinates);
 
 
 
-
 var linked_list2 = new LList();
 
 
@@ -395,28 +389,23 @@ var linked_list2 = new LList();
 function TiedLinkedListsClass(InitialClass, constructor, methods_list, instance_f) {
 
     constructor.prototype = InitialClass;
-    
-   print("Constructor prototype", InitialClass);
-    
-   for (var item in constructor.prototype) {print("Property", item);}
-
+        
     constructor.prototype.constructor = constructor;
     
     if (methods_list) {set_properties(constructor.prototype, methods_list);
-        
-        print("Methods_list", methods_list);
+    
     }
     
     if (instance_f) {set_properties(constructor, instance_f);}
     
-    for (var item in constructor.prototype) {print("Property1", item);}
+    
+    for (var item in constructor.prototype) {print(item);}
+
     
     return constructor;
     
     
 }
-
-
 
 
 
@@ -435,71 +424,17 @@ this.head = new Node("head");
 
 
 {
-//     create_llist: function (newElement){
-//     //var newNode = new Node(newElement);
-//     newElement.next = this.head;
-//     this.head = newElement;
-    
-//     return this;
-   
-// },
-
-// get_head_node: function() {
-
-// return this.head;},
-
-// add_item_in_llist : function (newElement, item) {
-// var newNode = new Node(newElement);
-// var current = this.find_item_in_llist(item);
-// newNode.next = current.next;
-// current.next = newNode;
-// },
-
-// find_pre_item_in_llist : function (item) {
-// var currNode = this.head;
-// while (!(currNode.next == null) &&
-// (currNode.next.data != item)) {
-// currNode = currNode.next;
-// }
-// return currNode;
-// },
-
-// display: function () {
-// var currNode = this.head;
-// while (!(currNode.next == null)) {
-// print(currNode.next.data);
-// currNode = currNode.next;
-// }
-// },
-
-// find_item_in_llist : function (item) {
-// var currNode = this.head;
-// while (currNode.data != item) {
-// currNode = currNode.next;
-// }
-// return currNode;
-// },
-
-
-// remove_from_llist: function (item) {
-// var prevNode = this.find_pre_item_in_llist(item);
-// if (!(prevNode.next == null)) {
-// prevNode.next = prevNode.next.next;
-//  }},
  
-star_model: function(){
+
+    star_model: function(){
 
         var current_node = this.get_head_node();
-
-       // while current_node:
 
         var next_node = current_node.get_next_node();
 
         current_node.set_next_node(next_node.get_next_node());
 
         current_node.nextl = next_node;
-
-        //----------------------------------------------------
 
         inst_3 = next_node.get_next_node();
 
@@ -511,31 +446,13 @@ star_model: function(){
 
         next_node.nextl = inst_3;
 
-
-        //print(str(inst_3));
-
-        //print(next_node.nextl);
-
-        //next_node.set_next_node(next_node.get_next_node());  
-
-
-        //print(next_node.data);
-
-        //print(next_node.get_next_node());
-
-        //-----------------------------------------------------
-
         inst_3.nextl = inst_3.get_next_node();
 
         inst_f = inst_3.nextl;
 
-        //print(inst_3.nextl);
-
         inst_3.set_next_node(next_node.get_next_node().get_next_node());
 
-        print(String(inst_3.data) + " : " + String(inst_3.get_next_node().data));//#str(next_node.get_next_node().get_next_node()))
-
-        //-----------------------------------------------------
+        print(String(inst_3.data) + " : " + String(inst_3.get_next_node().data));
 
         inst_f.nextl = inst_f.get_next_node();
 
@@ -571,10 +488,7 @@ star_model: function(){
         print(String(inst_f.nextl.data));
         print(String(inst_fl3.nextl.data));
         print(String(inst_fl2.nextl.data));
-
-        //print("--------------------------------------------------")
-
-        //print(str(current_node.get_link_node()))
+        
 
         return this;}
         
@@ -619,38 +533,14 @@ TiedLinkedListsClass_var1_1.create_llist(vertex5);
 TiedLinkedListsClass_var1_1.create_llist(vertex6);
 TiedLinkedListsClass_var1_1.create_llist(vertex7);
 
+
 TiedLinkedListsClass_var1_1.display();
 
-
-
 print(TiedLinkedListsClass_var1_1.get_head_node());
-
 
 print(TiedLinkedListsClass_var1_1.find_item_in_llist(1).data);
 
 TiedLinkedListsClass_var1_1.star_model();
-
-
-
-
-
-
-
-// print("------------------------------------------");
-
-// for (var item in linked_list2) {
-    
-//     print(item);
-// }
-
-
-
-
-
-
-
-
-
 
 
 
