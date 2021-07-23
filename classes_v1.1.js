@@ -374,4 +374,3 @@ SystemQueueClass_var1_1.add_path_coordinates(18, "Den Haag");
 print(SystemQueueClass_var1_1.path_coordinates);
 
 
-
