@@ -497,6 +497,7 @@ this.head = new Node("head");
 
 
 
+
 var TiedLinkedListsClass_var1_1 = new TiedLinkedLiestsClass_var1();
 
 print(TiedLinkedListsClass_var1_1);
@@ -535,4 +536,3 @@ print(TiedLinkedListsClass_var1_1.get_head_node());
 print(TiedLinkedListsClass_var1_1.find_item_in_llist(1).data);
 
 TiedLinkedListsClass_var1_1.star_model();
-
