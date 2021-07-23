@@ -420,12 +420,7 @@ this.head = new Node("head");
 
 },
 
-    {    set_properties: function(var1, var2){
-
-         for (var item in var2) {var1[item] = var2[item];}
-
-         return var1;
-    },
+    {    set_properties: set_properties,
 
     
         star_model: function(){
@@ -677,8 +672,6 @@ var nine = new Node(9);
 
 var ten = new Node(10);
 
-
-
 TiedLinkedLists1.llist.create_llist(one);
 
 TiedLinkedLists1.llist.create_llist(two);
@@ -705,6 +698,7 @@ TiedLinkedListsClass_var2.create_llist(nine);
 TiedLinkedListsClass_var2.create_llist(ten);
 
 TiedLinkedListsClass_var2.display();
+
 
 var llist7 = TiedLinkedLists1.llist.f1(TiedLinkedListsClass_var2);
 
