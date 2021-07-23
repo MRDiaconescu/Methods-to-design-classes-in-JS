@@ -409,10 +409,6 @@ function TiedLinkedListsClass(InitialClass, constructor, methods_list, instance_
 
 
 
-
-
-
-
 var TiedLinkedLiestsClass_var1 =  TiedLinkedListsClass(linked_list2,
 
 function() {
@@ -421,12 +417,7 @@ this.head = new Node("head");
 
 },
 
-
-
-{
- 
-
-    star_model: function(){
+{      star_model: function(){
 
         var current_node = this.get_head_node();
 
@@ -541,11 +532,6 @@ print(TiedLinkedListsClass_var1_1.get_head_node());
 print(TiedLinkedListsClass_var1_1.find_item_in_llist(1).data);
 
 TiedLinkedListsClass_var1_1.star_model();
-
-
-
-
-
 
 
 
