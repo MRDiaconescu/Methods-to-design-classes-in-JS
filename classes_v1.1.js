@@ -328,6 +328,7 @@ flight_number_generator : function(arg, arg1, arg2) {
 { instance_f1 : function() {return new SystemQueueClass();}}
 
     
+    
 );
 
 
