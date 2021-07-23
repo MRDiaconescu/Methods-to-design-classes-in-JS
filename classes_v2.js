@@ -420,7 +420,15 @@ this.head = new Node("head");
 
 },
 
-{      star_model: function(){
+    {    set_properties: function(var1, var2){
+
+         for (var item in var2) {var1[item] = var2[item];}
+
+         return var1;
+    },
+
+    
+        star_model: function(){
 
         var current_node = this.get_head_node();
 
