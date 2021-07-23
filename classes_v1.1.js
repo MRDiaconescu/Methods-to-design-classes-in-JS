@@ -7,6 +7,7 @@ using techniques specific to object oriented programming*/
 
 
 
+
 function Node(data) {
 this.data= data;
 this.next = null;
@@ -104,10 +105,6 @@ function set_properties(var1, var2){
 
   return var1;
 }
-
-
-
-
 
 
 
