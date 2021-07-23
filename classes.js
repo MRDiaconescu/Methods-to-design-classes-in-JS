@@ -239,8 +239,8 @@ print(map_f2_1_1);
 
 
 
-function paths_f1_1(arg1, arg2, arg3) {
-    
+
+function paths_f1_1(arg1, arg2) {
     
     arg2.path_coordinates.push(arg1);
     
@@ -313,6 +313,7 @@ var airport_numbers1 = airport_number_generator(airports_list1);
 print(airport_numbers1);
 
 
+
 function flight_number_generator(arg, arg1, arg2) {
     
     var first_airport_id;
@@ -361,6 +362,8 @@ function set_properties(var1, var2){
 }
 
 
+
+
 set_properties(SystemQueue.prototype, {
 
 add_path_coordinates : function (arg1, arg2) {
@@ -379,11 +382,9 @@ add_path_coordinates : function (arg1, arg2) {
     
 });
 
-
 system_queue.add_path_coordinates(18, "Den Haag");
 
 print(system_queue.path_coordinates);
-
 
 
 
@@ -392,6 +393,7 @@ function SystemQueueClass(constructor) {
     return constructor;
     
 }
+
 
 var SystemQueueClass_var1 = SystemQueueClass(
 function () {
@@ -456,6 +458,13 @@ print(flight_number1_1);
 SystemQueueClass_var1_1.add_path_coordinates(18, "Den Haag");
 
 print(SystemQueueClass_var1_1.path_coordinates);
+
+
+
+
+
+
+
 
 
 
