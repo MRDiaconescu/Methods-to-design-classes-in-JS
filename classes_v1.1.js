@@ -346,8 +346,6 @@ for (var item in SystemQueueClass_var1_1) {print(item);}
 print(SystemQueueClass_var1_1.llist_data);
 
 
-
-
 var var1 = SystemQueueClass_var1_1.map_locations1("Amsterdam", airports_list1);
 
 var var2 = SystemQueueClass_var1_1.paths("Amsterdam", airports_list1);
@@ -357,8 +355,6 @@ print(var2);
 var var5 = SystemQueueClass_var1_1.paths_f1_1(var2, SystemQueueClass_var1_1);
 
 print(var5.path_coordinates);
-
-
 
 var linked_list1_1 = SystemQueueClass_var1_1.LinkedList(SystemQueueClass_var1_1.llist_data, 1);
 
@@ -373,8 +369,8 @@ flight_number1_1 = SystemQueueClass_var1_1.flight_number_generator("KLM", airpor
 
 print(flight_number1_1);
 
-
 SystemQueueClass_var1_1.add_path_coordinates(18, "Den Haag");
 
 print(SystemQueueClass_var1_1.path_coordinates);
+
 
