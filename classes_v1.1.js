@@ -96,6 +96,8 @@ airports_list1 = ["Amsterdam", "Basel", "Eindhoven", "Groningen", "Maastricht", 
 
 
 
+
+
 function set_properties(var1, var2){
 
   for (var item in var2) {var1[item] = var2[item];}
@@ -327,8 +329,7 @@ flight_number_generator : function(arg, arg1, arg2) {
 
 { instance_f1 : function() {return new SystemQueueClass();}}
 
-    
-    
+
 );
 
 
