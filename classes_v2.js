@@ -246,31 +246,14 @@ LinkedList : function(arg1, arg2){
         print(item);
         
         print(arg1[arg2][item]);
+        
                 
         for (var item1 in arg1[arg2][item]){
         
             var node = new Node(arg1[arg2][item][item1]);
             
-            print("data", arg1[arg2][item][item1]);
-            
-            print("data", node);
-            
-            print("data", node.data);//}
-            
-            print("head node", linked_list.head);
-            
-            print("head node", linked_list.head.data);
-            
-            print("current:", node.data);
-            
-            current = linked_list.head;
-
-           
             linked_list.create_llist(node);}}
 
-
-        
-      // print(list_var);
     
     return linked_list;
     
@@ -305,61 +288,43 @@ flight_number_generator : function(arg, arg1, arg2) {
     
     for (var item in arg1) {
         
-        for (var item1 in arg1[item]) {
-            
-          // print(arg1[item][item1]);
-        
+        for (var item1 in arg1[item]) {        
         
         if (arg1[item][item1] == arg2[1][1]) {
             
-            print("Found", arg1[item][item1]);
+            print(arg1[item][item1]);
             
-            print("map path to airport number", arg1[item][0]);
+            print(arg1[item][0]);
             
             var first_airport_id = arg1[item][0];
         }
         
-        }
+      }
         
     }
     
-    print(arg2[1]);
     
      flight_number = arg + first_airport_id;
     
      return flight_number;
     
-    
-    
-    
+      
 },
 
+    
 add_path_coordinates: function (arg1, arg2) {
-    
-    print(this.path_coordinates);
-    
+        
      this.path_coordinates[0][arg1].push(arg2);
-     
-     print("this.path_coordinates", this.path_coordinates[0][arg1]);
-     
+          
     var aux = this.path_coordinates[0][arg1][this.path_coordinates[0][arg1].length-2];
     
     this.path_coordinates[0][arg1][this.path_coordinates[0][arg1].length-2] = this.path_coordinates[0][arg1][this.path_coordinates[0][arg1].length-1];
-    
-    print(this.path_coordinates[0][arg1][this.path_coordinates[0][arg1].length-2]);
-    
+        
     this.path_coordinates[0][arg1][this.path_coordinates[0][arg1].length-1] = aux;
     
-    print(this.path_coordinates[0][arg1][this.path_coordinates[0][arg1].length-1]);
-
      
      return this.path_coordinates;
      
-    
-     //print(this.path_coordinates[0][19].length);
-   
-     // print(this.path_coordinates[0][19][this.path_coordinates[0][19].length-3]);
-
     
     
     
@@ -371,11 +336,6 @@ add_path_coordinates: function (arg1, arg2) {
     
 );
 
-
-
-print(SystemQueueClass_var1);
-
-print(SystemQueueClass_var1.prototype);
 
 
 
@@ -395,12 +355,7 @@ SystemQueueClass_var1_1.add_path_f1(airports_list1);
 print(SystemQueueClass_var1_1.llist_data);
 
 
-
-//var var1 = SystemQueueClass_var1_1.instance_f1();
-
 var var1 = SystemQueueClass_var1_1.map_locations1("Amsterdam", airports_list1);
-
-// //print(this.paths("Amsterdam", airports_list));
 
 var var2 = SystemQueueClass_var1_1.paths("Amsterdam", airports_list1);
 
@@ -415,30 +370,13 @@ var linked_list1_1 = SystemQueueClass_var1_1.LinkedList(SystemQueueClass_var1_1.
 
 print("linked_list", linked_list1_1);
 
-print(linked_list1_1.head.data);
-
-print(linked_list1_1.head.next.data);
-
-print(linked_list1_1.head.next.next.data);
-
-
-
-
-
 var airport_numbers1_1 = SystemQueueClass_var1_1.airport_number_generator(airports_list1);
 
 print(airport_numbers1_1);
 
-
-
-
-print(SystemQueueClass_var1_1.llist_data[17]);
-
 flight_number1_1 = SystemQueueClass_var1_1.flight_number_generator("KLM", airport_numbers1_1, SystemQueueClass_var1_1.llist_data[18]);
 
 print(flight_number1_1);
-
-
 
 SystemQueueClass_var1_1.add_path_coordinates(18, "Den Haag");
 
@@ -451,7 +389,6 @@ print(SystemQueueClass_var1_1.path_coordinates);
 
 
 var linked_list2 = new LList();
-
 
 
 
