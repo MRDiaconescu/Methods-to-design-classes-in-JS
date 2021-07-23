@@ -365,12 +365,13 @@ var airport_numbers1_1 = SystemQueueClass_var1_1.airport_number_generator(airpor
 
 print(airport_numbers1_1);
 
-
 flight_number1_1 = SystemQueueClass_var1_1.flight_number_generator("KLM", airport_numbers1_1, SystemQueueClass_var1_1.llist_data[18]);
 
 print(flight_number1_1);
 
+
 SystemQueueClass_var1_1.add_path_coordinates(18, "Den Haag");
 
 print(SystemQueueClass_var1_1.path_coordinates);
+
 
