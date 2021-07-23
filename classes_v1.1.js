@@ -1,9 +1,9 @@
-
 /*
 Methods to design classes in JS version 1.1, 23 July 2021
 author: Maria Raluca Diaconescu
 This program displays methods to design classes in JS
 using techniques specific to object oriented programming*/
+
 
 
 
