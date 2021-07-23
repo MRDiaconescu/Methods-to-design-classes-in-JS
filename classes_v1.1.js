@@ -242,9 +242,7 @@ LinkedList : function(arg1, arg2){
         print(item);
         
         print(arg1[arg2][item]);
-        
-        var list_var = [];
-        
+                
         for (var item1 in arg1[arg2][item]){
         
             var node = new Node(arg1[arg2][item][item1]);
@@ -257,8 +255,7 @@ LinkedList : function(arg1, arg2){
 }, 
     
 
-
-    
+ 
     airport_number_generator : function (arg) {
     
     var counter = 0;
@@ -334,6 +331,9 @@ flight_number_generator : function(arg, arg1, arg2) {
 );
 
 
+
+
+
 SystemQueueClass_var1_1 = new SystemQueueClass_var1();
 
 print(SystemQueueClass_var1_1);
@@ -373,6 +373,5 @@ print(flight_number1_1);
 SystemQueueClass_var1_1.add_path_coordinates(18, "Den Haag");
 
 print(SystemQueueClass_var1_1.path_coordinates);
-
 
 
