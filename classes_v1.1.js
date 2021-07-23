@@ -92,17 +92,7 @@ prevNode.next = prevNode.next.next;
 
 
 
-airports_list1 = ["Amsterdam", "Zurich", "Eindhoven", "Groningen", "Maastricht", "Ameland", "Arnhem" , "Bonaire", "Budel",
-                    "Den Helder", "Deventer" ,"Drachten", "Enschede", "Hilversum", "Hoeven" ,"Hoegeveen" , "Lelystaad",  "MiddleBurg",
-                    "MiddenMeer", "Rotterdam", "Saba", "Saint Eustatius" ,"Stadskanaal", "Texel" , "Winschoten"]
 
-
-
-function set_properties(var1, var2){
-
-  for (var item in var2) {var1[item] = var2[item];}
-
-  return var1;}
 
 
 
