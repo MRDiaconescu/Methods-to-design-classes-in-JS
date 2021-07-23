@@ -335,13 +335,14 @@ flight_number_generator : function(arg, arg1, arg2) {
 );
 
 
-
 SystemQueueClass_var1_1 = new SystemQueueClass_var1();
 
 print(SystemQueueClass_var1_1);
 
 for (var item in SystemQueueClass_var1_1) {print(item);}
 
+
+SystemQueueClass_var1_1.add_path_f1(airports_list1);
 
 print(SystemQueueClass_var1_1.llist_data);
 
@@ -356,21 +357,22 @@ var var5 = SystemQueueClass_var1_1.paths_f1_1(var2, SystemQueueClass_var1_1);
 
 print(var5.path_coordinates);
 
+
 var linked_list1_1 = SystemQueueClass_var1_1.LinkedList(SystemQueueClass_var1_1.llist_data, 1);
 
 print(linked_list1_1);
-
 
 var airport_numbers1_1 = SystemQueueClass_var1_1.airport_number_generator(airports_list1);
 
 print(airport_numbers1_1);
 
+
 flight_number1_1 = SystemQueueClass_var1_1.flight_number_generator("KLM", airport_numbers1_1, SystemQueueClass_var1_1.llist_data[18]);
 
 print(flight_number1_1);
 
+
 SystemQueueClass_var1_1.add_path_coordinates(18, "Den Haag");
 
 print(SystemQueueClass_var1_1.path_coordinates);
-
 
