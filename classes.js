@@ -36,7 +36,6 @@ this.remove_from_llist = remove_from_llist;
 }
 
 function create_llist(newElement){
-    //var newNode = new Node(newElement);
     newElement.next = this.head;
     this.head = newElement; 
 }
