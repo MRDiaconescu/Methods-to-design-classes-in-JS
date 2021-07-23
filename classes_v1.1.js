@@ -263,7 +263,9 @@ LinkedList : function(arg1, arg2){
 }, 
     
 
-airport_number_generator : function (arg) {
+
+    
+    airport_number_generator : function (arg) {
     
     var counter = 0;
     
