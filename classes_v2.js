@@ -519,7 +519,6 @@ var vertex6 = new Node(6);
 
 var vertex7 = new Node(7);
 
-
 TiedLinkedListsClass_var1_1.create_llist(vertex1);
 TiedLinkedListsClass_var1_1.create_llist(vertex2);
 TiedLinkedListsClass_var1_1.create_llist(vertex3);
@@ -536,3 +535,5 @@ print(TiedLinkedListsClass_var1_1.get_head_node());
 print(TiedLinkedListsClass_var1_1.find_item_in_llist(1).data);
 
 TiedLinkedListsClass_var1_1.star_model();
+
+
