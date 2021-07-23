@@ -513,6 +513,7 @@ print(TiedLinkedListsClass_var1_1);
 for (var item in TiedLinkedListsClass_var1_1) {print(item);}
 
 
+
 var vertex1 = new Node(1);
 
 var vertex2 = new Node(2);
@@ -526,6 +527,7 @@ var vertex5 = new Node(5);
 var vertex6 = new Node(6);
 
 var vertex7 = new Node(7);
+
 
 TiedLinkedListsClass_var1_1.create_llist(vertex1);
 TiedLinkedListsClass_var1_1.create_llist(vertex2);
@@ -543,7 +545,6 @@ print(TiedLinkedListsClass_var1_1.get_head_node());
 print(TiedLinkedListsClass_var1_1.find_item_in_llist(1).data);
 
 TiedLinkedListsClass_var1_1.star_model();
-
 
 
 
@@ -633,7 +634,6 @@ print_the_linked_list_infinite_model: function(){
 
             print(current_node.next.data);
 
-
             current_node = current_node.next;
 
             counter+=1;
@@ -648,18 +648,12 @@ print_the_linked_list_infinite_model: function(){
 
 
 
-for (var item in TiedLinkedLists1) {print(1, item);}
-
-
-//for (var item in TiedLinkedLists2) {print(2, item);}
-
-
 var TiedLinkedLists1 = new TiedLinkedLists(new TiedLinkedLiestsClass_var1, TiedLinkedLists.infinite_model, TiedLinkedLists.print_the_linked_list_infinite_model); 
 
-for (var item in TiedLinkedLists1) {print(5, item);}
+for (var item in TiedLinkedLists1) {print(item);}
 
 
-print("llist", TiedLinkedLists1.llist);
+print(TiedLinkedLists1.llist);
 
 
 
@@ -684,6 +678,7 @@ var nine = new Node(9);
 var ten = new Node(10);
 
 
+
 TiedLinkedLists1.llist.create_llist(one);
 
 TiedLinkedLists1.llist.create_llist(two);
@@ -694,12 +689,7 @@ TiedLinkedLists1.llist.create_llist(four);
 
 TiedLinkedLists1.llist.create_llist(five);
 
-
 TiedLinkedLists1.llist.display();
-
-for (item in TiedLinkedLists1.llist) {print("llist1", item);}
-
-print(TiedLinkedLists1.f1);
 
 
 var TiedLinkedListsClass_var2 = new TiedLinkedLiestsClass_var1();
@@ -715,16 +705,6 @@ TiedLinkedListsClass_var2.create_llist(nine);
 TiedLinkedListsClass_var2.create_llist(ten);
 
 TiedLinkedListsClass_var2.display();
-
-
-print(TiedLinkedLists1.llist.head.data);
-print(TiedLinkedListsClass_var2.head.data);
-
-
-
-// for (var item in TiedLinkedLists) {print(item);}
-// for (var item in TiedLinkedLists1) {print(1, item);}
-
 
 var llist7 = TiedLinkedLists1.llist.f1(TiedLinkedListsClass_var2);
 
