@@ -545,3 +545,187 @@ print(TiedLinkedListsClass_var1_1.find_item_in_llist(1).data);
 TiedLinkedListsClass_var1_1.star_model();
 
 
+
+
+
+var TiedLinkedLists = TiedLinkedLiestsClass_var1.prototype.set_properties(
+    
+function TiedLinkedLists(llist, f1, f2) {
+    
+    this.llist = llist;
+    this.f1 = f1;
+    this.f2 = f2;
+    this.llist.f1 = this.f1;
+    this.llist.f2 = this.f2;
+},
+
+{infinite_model: function(llist2){
+
+        h1 = this.head;
+
+        h2 = llist2.head;
+        
+
+        five = h1;
+
+        four = h1.next;
+
+        three = h1.next.next;
+
+        two = h1.next.next.next;
+
+        one = h1.next.next.next.next;
+
+        print(one.data, two.data, three.data, four.data, five.data);
+
+
+        ten = h2;
+
+        nine = h2.next;
+
+        eight = h2.next.next;
+
+        seven = h2.next.next.next;
+
+        six = h2.next.next.next.next;
+
+        print(ten.data, nine.data, eight.data, seven.data, six.data);
+
+
+
+
+        one.set_next_node(six)
+
+        six.set_next_node(seven);
+
+        seven.set_next_node(three);
+
+        three.set_next_node(nine);
+
+        nine.set_next_node(ten);
+
+        ten.set_next_node(five);
+
+        five.set_next_node(four);
+
+        four.set_next_node(eight);
+
+        eight.set_next_node(two);
+
+        two.set_next_node(one);
+
+
+       return this;
+   
+ 
+ },
+    
+    
+    
+print_the_linked_list_infinite_model: function(){
+
+
+        var current_node = this.head;
+
+        var counter = 0
+
+        while (current_node){
+
+            print(current_node.next.data);
+
+
+            current_node = current_node.next;
+
+            counter+=1;
+
+            if (counter == 10){
+
+                break;}} 
+            
+     
+   }})
+
+
+
+
+for (var item in TiedLinkedLists1) {print(1, item);}
+
+
+//for (var item in TiedLinkedLists2) {print(2, item);}
+
+
+var TiedLinkedLists1 = new TiedLinkedLists(new TiedLinkedLiestsClass_var1, TiedLinkedLists.infinite_model, TiedLinkedLists.print_the_linked_list_infinite_model); 
+
+for (var item in TiedLinkedLists1) {print(5, item);}
+
+
+print("llist", TiedLinkedLists1.llist);
+
+
+
+var one = new Node(1);
+
+var two = new Node(2);
+
+var three = new Node(3);
+
+var four = new Node(4);
+
+var five = new Node(5);
+
+var six = new Node(6);
+
+var seven = new Node(7);
+
+var eight = new Node(8);
+
+var nine = new Node(9);
+
+var ten = new Node(10);
+
+
+TiedLinkedLists1.llist.create_llist(one);
+
+TiedLinkedLists1.llist.create_llist(two);
+
+TiedLinkedLists1.llist.create_llist(three);
+
+TiedLinkedLists1.llist.create_llist(four);
+
+TiedLinkedLists1.llist.create_llist(five);
+
+
+TiedLinkedLists1.llist.display();
+
+for (item in TiedLinkedLists1.llist) {print("llist1", item);}
+
+print(TiedLinkedLists1.f1);
+
+
+var TiedLinkedListsClass_var2 = new TiedLinkedLiestsClass_var1();
+
+TiedLinkedListsClass_var2.create_llist(six);
+
+TiedLinkedListsClass_var2.create_llist(seven);
+
+TiedLinkedListsClass_var2.create_llist(eight);
+
+TiedLinkedListsClass_var2.create_llist(nine);
+
+TiedLinkedListsClass_var2.create_llist(ten);
+
+TiedLinkedListsClass_var2.display();
+
+
+print(TiedLinkedLists1.llist.head.data);
+print(TiedLinkedListsClass_var2.head.data);
+
+
+
+// for (var item in TiedLinkedLists) {print(item);}
+// for (var item in TiedLinkedLists1) {print(1, item);}
+
+
+var llist7 = TiedLinkedLists1.llist.f1(TiedLinkedListsClass_var2);
+
+llist7.f2();
