@@ -466,7 +466,7 @@ this.head = new Node("head");
 
         inst_fl1 = inst_fl2.get_next_node();
 
-        inst_fl3.set_next_node(inst_fl2);
+        inst_fl3.set_next_node(inst_fl1);
 
         inst_fl3.nextl= inst_fl2;
 
