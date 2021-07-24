@@ -736,20 +736,3 @@ function TiedLinkedLists_setter(llist, f1, f2) {
 }
 
 
-function print_attributes(arg, arg1) {
-    
-    var attribute_descriptor = Object.getOwnPropertyDescriptor(arg, arg1);
-    
-    print(attribute_descriptor.enumerable);
-    
-    print(attribute_descriptor.writable);
-    
-    print(attribute_descriptor.configurable);
-    
-    
-    
-}
-
-print_attributes(TiedLinkedLists1, "llist");
-
-print_attributes(TiedLinkedLists2, "llist");
