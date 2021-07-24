@@ -703,3 +703,53 @@ TiedLinkedListsClass_var2.display();
 var llist7 = TiedLinkedLists1.llist.f1(TiedLinkedListsClass_var2);
 
 llist7.f2();
+
+
+
+
+
+
+function TiedLinkedLists_setter(llist, f1, f2) {
+
+    var attributes_list = {
+
+
+        llist : {value: llist, enumerable:true, writable:false, configurable: false},
+
+        f1: {value: f1, enumerable:true, writable:false, configurable:false},
+
+        f2: {value: f2, enumerable:true, writable: false, configurable:false},
+        
+
+    };
+    
+    llist.f1 = f1;
+    
+    llist.f2 = f2;
+
+    if (this instanceof TiedLinkedLists_setter) {
+
+        Object.defineProperties(this, attributes_list);
+
+    }
+    
+}
+
+
+function print_attributes(arg, arg1) {
+    
+    var attribute_descriptor = Object.getOwnPropertyDescriptor(arg, arg1);
+    
+    print(attribute_descriptor.enumerable);
+    
+    print(attribute_descriptor.writable);
+    
+    print(attribute_descriptor.configurable);
+    
+    
+    
+}
+
+print_attributes(TiedLinkedLists1, "llist");
+
+print_attributes(TiedLinkedLists2, "llist");
