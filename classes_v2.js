@@ -420,7 +420,12 @@ this.head = new Node("head");
 
 },
 
-    {    set_properties: set_properties,
+    {   set_properties: set_properties,
+     
+        
+        setter:  function()  {this.llist = this;
+    
+                    return this;},
 
     
         star_model: function(){
@@ -753,3 +758,48 @@ function print_attributes(arg, arg1) {
 print_attributes(TiedLinkedLists1, "llist");
 
 print_attributes(TiedLinkedLists2, "llist");
+
+
+
+TiedLinkedListsClass_var1.prototype.getter = TiedLinkedLists.print_the_linked_list_infinite_model;
+   
+function TiedLinkedLists_setter_f1(llist, f1, f2, getter, setter) {
+        
+        
+    var attributes_list = {
+
+
+        llist : {value: llist, enumerable:true, writable:false, configurable: false},
+
+        f1: {value: f1, enumerable:true, writable:false, configurable:false},
+
+        f2: {value: f2, enumerable:true, writable: false, configurable:false},
+        
+
+    };
+    
+
+    llist.f1 = f1;
+    
+    llist.f2 = f2;
+    
+    var attributes_list1 = { 
+        
+    get: {value: getter, enumerable:true, writable: false, configurable:false},
+        
+    set: {value: setter, enumerable:true, writable: false, configurable:false}
+
+        
+    };
+
+        
+
+    if (this instanceof TiedLinkedLists_setter_f1) {
+
+         Object.defineProperties(this, attributes_list);
+         Object.defineProperties(this, attributes_list1);
+
+      
+    }
+
+}
