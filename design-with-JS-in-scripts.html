@@ -9,7 +9,6 @@
 }
 
 
-
 </style>
 
 
@@ -28,7 +27,6 @@
 
 
 <canvas id="canvas" width="557" height="495"></canvas>
-
 
 <script>
 
@@ -880,15 +878,10 @@ constructor: {value: FlightCoordinator},
 
 drawLines : {value: function (p1_1, p1_2, p2_1, p2_2 ) {
 
-
-//canvas = document.querySelector('canvas').getContext('2d');
-
+  
 canvas = new FlightCoordinator().canvas;
 
-
 canvas.beginPath();
-
-
 
 canvas.moveTo(p1_1, p1_2);
 
@@ -904,16 +897,13 @@ canvas.closePath();}},
 
 drawLines_f1 : {value: function(p1_1, p1_2, p2_1, p2_2 ) {
 
-
-
 var canvas = document.querySelector('canvas').getContext('2d');
-
 
 canvas.beginPath();
 
 canvas.moveTo(p1_1, p1_2);
+  
 canvas.lineTo(p2_1, p2_2);
-
 
 canvas.strokeStyle = "#1529bf";
 
@@ -923,20 +913,16 @@ canvas.stroke();
 
 canvas.closePath();
 
+
 }},
 
 
 draw_point: {value: function (p1_1, p1_2, label, color, size) {
 
-
 var canvas = document.querySelector('canvas').getContext('2d');
 
 
 canvas.beginPath();
-
-//color = " #2375d8 ";
-
-//size = 5;
 
 canvas.fillStyle = color;
 
@@ -967,27 +953,8 @@ canvas.closePath();
 })
 
 
-// function drawLines(p1_1, p1_2, p2_1, p2_2 ) {
 
-
-// var canvas = document.querySelector('canvas').getContext('2d');
-
-
-// canvas.beginPath();
-
-
-
-// canvas.moveTo(p1_1, p1_2);
-
-// canvas.lineTo(p2_1, p2_2);
-
-// canvas.strokeStyle = "#1529bf";
-
-// canvas.fill();
-
-// canvas.stroke();
-
-// canvas.closePath();}
+  
 
 var FlightCoordinator1 = new FlightCoordinator();
 
@@ -1009,7 +976,6 @@ FlightCoordinator1.drawLines(-21,298,493,298);
 
 FlightCoordinator1.drawLines(-21,337,493,337);
 
-
 FlightCoordinator1.drawLines(-21,376,493,376);
 
 FlightCoordinator1.drawLines(-21,415,493,415);
@@ -1018,32 +984,6 @@ FlightCoordinator1.drawLines(-21,454,493,454);
 
 FlightCoordinator1.drawLines(-21,493,493,493);
 
-
-
-
-
-// function drawLines_f1(p1_1, p1_2, p2_1, p2_2 ) {
-
-
-
-// var canvas = document.querySelector('canvas').getContext('2d');
-
-
-// canvas.beginPath();
-
-// canvas.moveTo(p1_1, p1_2);
-// canvas.lineTo(p2_1, p2_2);
-
-
-// canvas.strokeStyle = "#1529bf";
-
-// canvas.fill();
-
-// canvas.stroke();
-
-// canvas.closePath();
-
-// }
 
 
 FlightCoordinator1.drawLines_f1(1,25,1,492);
@@ -1066,7 +1006,6 @@ FlightCoordinator1.drawLines_f1(329,25,329,492);
 
 FlightCoordinator1.drawLines_f1(370,25,370,492);
 
-
 FlightCoordinator1.drawLines_f1(411,25,411,492);
 
 FlightCoordinator1.drawLines_f1(452,25,452,492);
@@ -1075,61 +1014,17 @@ FlightCoordinator1.drawLines_f1(493,25,493,492);
 
 
 
-
-// function draw_point(p1_1, p1_2, label, color, size) {
-
-
-// var canvas = document.querySelector('canvas').getContext('2d');
-
-
-// canvas.beginPath();
-
-// //color = " #2375d8 ";
-
-// //size = 5;
-
-// canvas.fillStyle = color;
-
-// var p1_1 =   Math.round(p1_1);
-
-// var p1_2 = Math.round(p1_2);
-
-// canvas.arc(p1_1, p1_2, size,0 * Math.PI, 2 * Math.PI);
-
-// canvas.fill();
-
-
-// if (label) {
-//             var textp1_1 = Math.round(p1_1);
-//              var textp1_2 = Math.round(p1_2 - 5);
-          
-//             canvas.font = 'Italic 12px Arial';
-//             canvas.fillStyle =  "#1158A7" ;
-//             canvas.textAlign = 'center';
-//             canvas.fillText(label, textp1_1, textp1_2);
-//         }
-
-// canvas.closePath();
-
-// }
-
-
 FlightCoordinator1.draw_point(197, 59, "Ameland", "#2375d8", 5);
 
 FlightCoordinator1.draw_point(95, 255, "Amsterdam", "#2375d8", 5);
 
 FlightCoordinator1.draw_point(225, 331, "Arnhem", "#2375d8", 5);
 
-
 FlightCoordinator1.draw_point(197, 450, "Budel", "#2375d8", 5);
-
 
 FlightCoordinator1.draw_point(65, 136, "Den Helder", "#2375d8", 5);
 
-
 FlightCoordinator1.draw_point(315, 293, "Deventer", "#2375d8", 5);
-
-
 
 FlightCoordinator1.draw_point(295, 98, "Drachten", "#2375d8", 5);
 
@@ -1147,12 +1042,9 @@ FlightCoordinator1.draw_point(360, 195, "Hoogeveen", "#2375d8", 5);
 
 FlightCoordinator1.draw_point(182, 215, "Lelystad", "#2375d8", 5);
 
-
-
 FlightCoordinator1.draw_point(300, 470, "Maastricht" , "#2375d8", 5);
 
 FlightCoordinator1.draw_point(31, 410, "Middelburg", "#2375d8", 5);
-
 
 FlightCoordinator1.draw_point(117, 157, "Middenmeer", "#2375d8", 5);
 
@@ -1160,11 +1052,9 @@ FlightCoordinator1.draw_point(55, 325, "Rotterdam", "#2375d8", 5);
 
 FlightCoordinator1.draw_point(55, 370, "Numansdorp", "#2375d8", 5);
 
-
 FlightCoordinator1.draw_point(443, 136, "Stadskanaal", "#2375d8", 5);
 
 FlightCoordinator1.draw_point(346, 432, "Venlo", "#2375d8", 5);
-
 
 FlightCoordinator1.draw_point(65, 98, "Texel", "#2375d8", 5);
 
@@ -1173,8 +1063,9 @@ FlightCoordinator1.draw_point(459, 97, "Winschoten", "#2375d8", 5);
 </script>
 
 
-
-
+  
+  
+  
 
 </body>
 </html>
