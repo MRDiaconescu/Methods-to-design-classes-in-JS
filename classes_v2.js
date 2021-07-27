@@ -761,10 +761,13 @@ print_attributes(TiedLinkedLists2, "llist");
 
 
 
-TiedLinkedListsClass_var1.prototype.getter = TiedLinkedLists.print_the_linked_list_infinite_model;
    
+
+
+
+TiedLinkedListsClass_var1.prototype.getter = TiedLinkedLists.print_the_linked_list_infinite_model;
+
 function TiedLinkedLists_setter_f1(llist, f1, f2, getter, setter) {
-        
         
     var attributes_list = {
 
@@ -803,3 +806,10 @@ function TiedLinkedLists_setter_f1(llist, f1, f2, getter, setter) {
     }
 
 }
+
+
+
+
+
+
+var TiedLinkedLists5 =  new TiedLinkedLists_setter_f1(new TiedLinkedListsClass_var1, TiedLinkedLists.infinite_model, TiedLinkedLists.print_the_linked_list_infinite_model, TiedLinkedLists.getter, TiedLinkedListsClass_var1.setter); 
