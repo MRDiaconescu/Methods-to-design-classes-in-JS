@@ -813,3 +813,16 @@ function TiedLinkedLists_setter_f1(llist, f1, f2, getter, setter) {
 
 
 var TiedLinkedLists5 =  new TiedLinkedLists_setter_f1(new TiedLinkedListsClass_var1, TiedLinkedLists.infinite_model, TiedLinkedLists.print_the_linked_list_infinite_model, TiedLinkedLists.getter, TiedLinkedListsClass_var1.setter); 
+
+var attribute_descriptor5 = Object.getOwnPropertyDescriptor(TiedLinkedLists5, "llist");
+
+for (var item in TiedLinkedLists5) {
+
+    print_attributes(TiedLinkedLists5, item);
+
+}
+
+
+
+
+
